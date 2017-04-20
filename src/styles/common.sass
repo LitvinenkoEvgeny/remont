@@ -1,0 +1,26 @@
+@import "./variables"
+
+%clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+%commonHeader
+  font-family: $headerFont
+  font-size: $headerSize
+  font-weight: $headerFontWeight
+    line-height: 24px
+
+%commonSubHeader
+  font-family: $subHeaderFont
+  display: block
+  font-size: $textSize
+  text-transform: uppercase
+  line-height: 40px
+  letter-spacing: .65em
+
+%commonText
+  font-family: $headerFont
+  font-size: $textSize
+  line-height: 28px

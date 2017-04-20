@@ -1,0 +1,76 @@
+@import '../../styles/variables'
+@import '../../styles/common'
+@import '../../styles/mixins'
+@import '../../components/Common/ButtonWithTextStyles'
+
+#wrapper #services #block1 .card-container h2 .small
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    display: none
+
+#wrapper #services #block1 .card-container h2 .big
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    font-size: 3em
+    padding: 29px 25px 20px 55px
+
+
+.BuyFormContainer
+  h2
+    text-align: center
+    margin-bottom: 25px
+.buy-form
+  @extend %clearfix
+  //+textButton($position: absolute, $top: 1px, $right: 1px, $borderWidth: 1px)
+  text-align: center
+  &__item
+    &--error
+      .buy-form__input, .buy-form__input:focus
+        border-bottom-color: red
+    &--valid
+      .buy-form__input, .buy-form__input:focus
+        border-bottom-color: green
+  &__price-text
+    @extend %commonHeader
+    font-size: 16px
+    font-weight: 400
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 3.7em
+  &__price-line
+    display: inline-block
+    line-height: 60px
+  &__price
+    @extend %commonSubHeader
+    font-size: 16px
+    letter-spacing: initial
+    text-transform: none
+    display: inline-block
+    margin-left: 20px
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 2em
+  &__form
+    text-align: center
+    display: block
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      display: block
+      width: 100%
+  &__input
+    margin-left: 15px
+    margin-bottom: 15px
+    border-bottom: 1px solid #000
+    transition: border-bottom-color .8s ease-in-out
+    &:focus
+      border-bottom: 1px solid #000
+      & + .buy-form__text
+        display: none
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      width: 100%
+      padding: 10px
+      font-size: 2em
+      margin-left: 0
+  &__text
+    @extend %commonText
+    display: none
+  &__submit-wrp
+    clear: both
+  &__submit
+    &--hidden
+      display: none

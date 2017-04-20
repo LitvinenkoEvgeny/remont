@@ -1,0 +1,74 @@
+=textButton($right: null, $left: null, $top: null, $bottom: null, $bg: #ccc, $color: #000, $invertedColor: #c2945e, $position: absolute, $borderWidth: 3px)
+  .text-button
+    cursor: pointer
+    font-family: 'Anonymous Pro'
+    background-color: $bg
+    display: block
+    float: left
+    color: $color
+    border: $borderWidth solid $color
+    position: $position
+    top: $top
+    right: $right
+    bottom: $bottom
+    left: $left
+    &, span
+      transition-duration: .45s
+      transition-property: color, border-color, background, opacity
+      transition-delay: 0s
+      transition-timing-function: 'ease-in-out'
+    &:hover
+      .text-button__bg
+        background-position: 59px center
+    &--inverted
+      color: $invertedColor
+      border-color: $invertedColor
+      .text-button__txt
+        border-color: $invertedColor
+      .text-button__bg
+        background-image: url('./images/btn_arrow-inverted.png')
+    &--disabled
+      cursor: not-allowed
+      .text-button__txt
+        color: transparent
+      &:hover
+        .text-button__bg
+          background-position: center
+    &__txt
+      display: block
+      overflow: hidden
+      position: relative
+      margin-right: 59px
+      border-right: 2px solid $color
+      height: 65px
+      z-index: 1
+    &__small
+      font-family: 'Oswald', sans-serif
+      display: block
+      position: absolute
+      left: 10px
+      top: 7px
+      font-size: 8px
+      text-transform: uppercase
+      letter-spacing: .1em
+    &__big
+      transition-duration: .45s
+      transition-property: margin-top, background
+      transition-delay: 0s
+      transition-timing-function: 'ease-in-out'
+      display: block
+      padding: 15px 25px 0
+      min-width: 115px
+    &__inner-text
+      display: block
+      font-size: 15px
+      line-height: 50px
+      white-space: nowrap
+    &__bg
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      background: url('./images/btn_arrow.png') repeat-x 0 center
+      height: 100%
+      width: 59px

@@ -1,0 +1,94 @@
+#objects-works
+  .object
+    &__form
+      margin: 15px 0
+    &__detail
+      p
+        margin: 15px 0
+      h4
+        margin: 5px 0
+      ul
+        margin: 30px 0
+      table
+        margin: 20px 0
+        thead
+          font-weight: bold
+      li
+        margin: 10px 0 10px 25px
+        font-size: .8em
+        list-style-type: disc
+  .info
+    &__cell3
+      padding-top: 60px
+
+  .filter__img
+    z-index: 1
+    width: 190px
+    height: 150px
+    filter: blur(3px) grayscale(.8)
+    transition: filter .8s ease-in-out
+    background-size: cover
+    &:hover
+      filter: blur(0px) grayscale(0)
+
+  .filter__item:hover
+    .filter__img
+      filter: blur(0px) grayscale(0)
+
+
+  .filter
+    width: 100%
+
+    .filter__item
+      input[checked="checked"] ~ .filter__img
+        filter: blur(0px) grayscale(0)
+
+    .btn
+      font-size: 1.7em
+      line-height: 150px
+      z-index: 2
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      &__front
+        display: none
+        color: #333333
+
+
+  .object--works
+    .btn
+      &__hover-in, &__front
+        padding: 20px 5px 5px 20px
+        font-size: 0.7em
+
+      &--withTitle.btn--2-rows
+        .btn__hover-in, .btn__front
+          padding: 24px 5px 5px 20px
+
+      &--withTitle.btn--3-rows
+        .btn__hover-in, .btn__front
+          padding: 18px 5px 5px 20px
+
+      &--1-rows.btn--withTitle
+        .btn__hover-in, .btn__front
+          padding-top: 30px
+
+      &--1-rows:not(.btn--withTitle)
+        .btn__hover-in, .btn__front
+          padding-top: 40px
+
+      &--2-rows
+        .btn__hover-in, .btn__front
+          padding-top: 31px
+
+      &--3-rows
+        .btn__hover-in, .btn__front
+          padding-top: 23px
+
+  .contacts-table
+    .form
+      .btn
+        &__hover-in, &__front
+          padding-top: 0

@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "filterName": "all",
+    "filterValue": "all",
+    "checked": "checked",
+    "filterText": "Все",
+    "img": "all.jpg"
+  },
+  {
+    "id": 2,
+    "filterName": "walls",
+    "filterValue": "walls",
+    "href": "walls.html",
+    "checked": false,
+    "filterText": "Стены",
+    "img": "walls.jpg"
+  },
+  {
+    "id": 3,
+    "filterName": "roof",
+    "filterValue": "roof",
+    "href": "roof.html",
+    "checked": false,
+    "filterText": "Потолки",
+    "img": "roof.jpg"
+  },
+  {
+    "id": 4,
+    "filterName": "floor",
+    "filterValue": "floor",
+    "href": "floor.html",
+    "checked": false,
+    "filterText": "Полы",
+    "img": "floor.jpg"
+  },
+  {
+    "id": 5,
+    "filterName": "bathroom",
+    "filterValue": "bathroom",
+    "href": "bathroom.html",
+    "checked": false,
+    "filterText": "Санузел",
+    "img": "bathroom.jpg"
+  }
+]

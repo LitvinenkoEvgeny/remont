@@ -1,0 +1,53 @@
+=Button($direction: 'bottom', $bgc: transparent, $left: null, $top: null, $right: null, $bottom: null)
+  .button
+    transition: opacity .55s ease-in-out 0s, bottom .55s ease-in-out 0s
+    display: block
+    position: absolute
+    margin-left: -40px
+    z-index: 820
+    @if $direction == 'bottom'
+      transform: rotate(.25turn)
+    @if $direction == 'left'
+      transform: rotate(-.25turn)
+    @if $direction == 'right'
+      transform: rotate(0)
+    @if $left
+      left: $left
+    @if $top
+      top: $top
+    @if $right
+      right: $right
+    @if bottom
+      bottom: $bottom
+    &:hover
+      .button__icon
+        background-position: 59px center
+    &__bg
+      display: block
+      position: relative
+      background: $bgc
+      width: 80px
+      height: 80px
+      opacity: .25
+      filter: alpha(opacity=25)
+    &__icon
+      transition: background .45s ease-in-out 0s
+      display: block
+      position: absolute
+      left: 0
+      top: 0
+      margin: 7px
+      border: 2px solid #c2945e
+      background: url('./images/btn_arrow-inverted.png') repeat-x center center
+      width: 62px
+      height: 62px
+      z-index: 1
+
+=trsProp($props...)
+  @each $prop in $props
+    transition-property: $prop
+    transition-duration: .8s
+    transition-timing-function: ease-in-out
+
+@function toPercents($target, $context)
+  @return $target / $context * 100 * 1%

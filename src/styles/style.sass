@@ -1,0 +1,60 @@
+@import '~susy'
+
+@import './variables'
+@import './common'
+
+// little margin
+#services #block1
+  margin-top: 150px
+
+#wrapper #services #block1 .card-container .content>*
+  transition: none
+
+// hide scroll down button
+#wrapper .btn-scroll-down.loaded
+  display: none
+
+#wrapper #services #block1 .card-container
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    width: 915px
+
+#wrapper #services #block1 .card-container>div>div
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    width: 95%
+
+#calculator
+  margin-bottom: 235px
+
+#contacts
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    padding-bottom: 170px
+
+#partners .btn, #contacts .btn, #partners .btn, #bonus .btn
+  @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+    margin-top: 0
+
+.Calculator
+  padding: 0 100px
+
+
+.catalog-category
+  margin-left: -355px
+  width: 680px
+  &::before
+    width: 680px
+
+@keyframes contacts
+  50%
+    transform: rotate(10deg)
+  75%
+    transform: rotate(-10deg)
+  100%
+    transform: rotate(0)
+
+.nav
+  &__inner
+    overflow: visible
+  &__back, &__front
+    .nav__list
+      li:last-child
+        animation: contacts infinite .8s ease-in-out both alternate 1s

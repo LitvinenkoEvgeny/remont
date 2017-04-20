@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>МосСтройУют - Стены</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=1368">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" media="all" href="css/screen.css">
+  <script type="text/javascript"
+          data-pace-options="{ &quot;restartOnPushState&quot;: false, &quot;restartOnRequestAfter&quot;: false }"
+          src="js/pace.min.js"></script>
+  <!--[if IE]>
+  <script src="js/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="dist/app.css">
+  <link rel="stylesheet" href="dist/mobile.css">
+</head>
+<body class="preload">
+
+<div style="position: absolute; top: 0; left: 0;">
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow-sm" viewBox="0 0 9 40">
+      <title>
+        arrow-sm
+      </title>
+      <path
+        d="M5 1.845V40H4V1.846L1.644 3.992l-.38.347L.5 3.643l.38-.347L4.12.347l.19-.173L4.5 0l.38.348 3.24 2.95.38.346-.763.695-.38-.348-2.358-2.147z"
+        fill-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-arrow" viewBox="0 0 70 9">
+      <title>
+        arrow
+      </title>
+      <path
+        d="M68.154 5H0V4H68.154l-2.146-2.356-.347-.38.696-.764.347.38 2.95 3.24.173.19.174.19-.348.38-2.95 3.24-.346.38-.695-.763.348-.38L68.154 5z"
+        fill-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-figure" viewBox="0 0 55 40">
+      <title>
+        figure
+      </title>
+      <path
+        d="M55 21H41v19h-1v-.374L25.44 30H15v-9H0v-1h15V10h10.314L40 .44V0h1v20h14v1zM25 11h-9v18h9V11zm15-9.352l-6.723 4.377L26 10.762v18.392l14 9.256V1.648z"
+        fill-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-polygon" viewBox="0 0 40 46">
+      <title>
+        polygon
+      </title>
+      <path d="M19.98 45.498L.5 34.23l.02-22.495L20.02.503 39.5 11.766l-.02 22.5-19.5 11.23z" stroke="#333"
+            fill-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-target" viewBox="0 0 45 45">
+      <title>
+        target
+      </title>
+      <path
+        d="M34.975 23C34.717 29.502 29.503 34.716 23 34.974V45h-1V34.974C15.497 34.716 10.283 29.502 10.025 23H0v-1h10.025c.258-6.502 5.472-11.717 11.975-11.975V0h1v10.025c6.503.258 11.717 5.473 11.975 11.974H45v1H34.975zm-1-1C33.72 16.05 28.95 11.28 23 11.024V16h-1v-4.975C16.05 11.28 11.28 16.05 11.025 22H16v1h-4.975C11.28 28.95 16.05 33.718 22 33.974V29h1v4.974C28.95 33.718 33.72 28.95 33.975 23H29v-1h4.975zM22.5 23.5c-.828 0-1.5-.448-1.5-1 0-.553.672-1 1.5-1s1.5.447 1.5 1c0 .552-.672 1-1.5 1z"
+        fill-rule="evenodd"/>
+    </symbol>
+    <symbol id="icon-vn-star" viewBox="0 0 77 23">
+      <title>
+        Мосстройуют
+      </title>
+      <path
+        d="M3.782.3H.342L3.688 22h5.083L12.12.3H8.99L6.386 18 3.782.3zM20.987 22h3.503V.3h-3.038v12.99L17.95.3h-4.28V22h3.07V6.283L20.987 22zM36.24.145c-3.132.03-4.403 2.232-4.403 5.363 0 5.952 8.525 5.642 8.525 11.253 0 2.79-1.054 5.085-4.154 5.085-3.1 0-4.154-2.294-4.154-5.084V15.74h-.31v1.023c0 2.946 1.178 5.395 4.464 5.395 3.286 0 4.464-2.45 4.464-5.394 0-5.858-8.525-5.548-8.525-11.252 0-2.728 1.023-5.053 4.092-5.053 3.068 0 4.09 2.356 4.09 5.084v.37h.31v-.37c0-2.915-1.146-5.395-4.4-5.395zM47.863 22V.61h4.898V.3H42.656v.31h4.898V22h.31zm15.655-5.27L64.882 22h.31L59.583.27h-.435L53.66 22h.31l1.334-5.27h8.215zM59.364.672l4.06 15.748h-8.028L59.365.672zM67.673.3V22h.31V11.832h2.852c3.007 0 5.115.837 5.115 4.185v3.41c0 .837.093 1.86.558 2.573h.372c-.527-.65-.62-1.767-.62-2.573v-3.41c0-2.418-1.116-3.968-3.627-4.31 2.51-.37 3.627-1.86 3.627-4.587V5.167C76.26 2.222 75.05.3 71.858.3h-4.185zm.31 11.222V.61h3.875c3.007 0 4.092 1.767 4.092 4.557V7.12c0 3.596-1.89 4.402-5.115 4.402h-2.852z"
+        fill-rule="evenodd"/>
+    </symbol>
+  </svg>
+</div>
+<!--BEGIN header-->
+<header id="header" class="header">
+  <div class="header__left"><a href="index.html" class="logo">
+    <svg class="icon icon-vn-star">
+    </svg>
+    ddeshowy.com</a><span>Мос Строй Уют</span></div>
+  <div class="header__right"><a href="tel:8(495)642-43-19" class="header__phone"><em>8(495)</em> 642-43-19</a>
+  </div>
+  <div class="header__center">
+    <button type="button" class="btn btn_transparent">
+      <div class="btn__front">на главную</div>
+      <div class="btn__hover">
+        <div class="btn__hover-in">на главную</div>
+      </div>
+    </button>
+  </div>
+</header>
+<!--END header-->
+<!--BEGIN outer and inner-->
+<div id="outer">
+  <div id="inner">
+    <!--BEGIN catalog-->
+    <section id="home" class="js-section catalog">
+      <div id="catalog" class="catalog__modal">
+        <div class="catalog__modal-container">
+          <div class="catalog__inner">
+            <div id="objects-works" class="catalog__content">
+              <link rel="stylesheet" href="dist/works.css">
+              <div id="worksPlaceholder"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+<script type="text/javascript"> (function (d, w, c) {
+  (w[c] = w[c] || []).push(function () {
+    try {
+      w.yaCounter41576979 = new Ya.Metrika({
+        id: 41576979,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+        trackHash: true
+      });
+    } catch (e) {
+    }
+  });
+  var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+    n.parentNode.insertBefore(s, n);
+  };
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://mc.yandex.ru/metrika/watch.js";
+  if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+  } else {
+    f();
+  }
+})(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
+<script src="dist/mobile.js"></script>
+<script src="js/main.js"></script>
+<script src="dist/works.js" async defer></script>
+<script>
+  $('#objects-works').css({display: 'block', paddingTop: '210px'});
+  function backToSite(){
+    console.log('here');
+    console.log(window.location.pathname);
+    window.location.pathname = '/';
+  }
+
+  $('.header__center button').bind('click', backToSite);
+
+  function showButton(){
+      app.backButton.visible();
+  }
+  var showButtonInterval = setInterval(function(){
+    showButton();
+  }, 1000)
+</script>
+</body>
+</html>

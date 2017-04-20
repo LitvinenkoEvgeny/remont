@@ -1,0 +1,108 @@
+.clearfix
+  &:after
+    content: ""
+    display: table
+    clear: both
+
+$lightColor: hsla(90,64%,83%,.12)
+$darkColor: rgba(72,72,40,.21)
+%common_text
+    font-family: 'Anonymous Pro'
+    font-size: 15px
+    line-height: 28px
+%common_text_strong
+  font-weight: bold
+
+%common_header
+    font-family: 'Oswald', sans-serif
+    display: block
+    font-size: 15px
+    text-transform: uppercase
+    color: #633a00
+
+%common_header2
+  font-family: 'Forum', cursive
+  font-size: 20px
+  text-transform: uppercase
+  text-align: center
+  font-weight: bold
+
+%headerPFBSans_font
+  @extend %common_header2
+  font-family: "PFBeauSansPro-Regular", Helvetica, Arial, sans-serif
+
+%header_Helvetica_font
+  @extend %common_header
+  font-family: "HelveticaNeueCyr-Bold", Helvetica, Arial, sans-serif
+
+.accordions
+  &__row
+    display: block
+    width: 100%
+    @extend .clearfix
+    .accordion__wrp:nth-child(odd)
+      float: left
+      width: 49%
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+        width: 100%
+    .accordion__wrp:nth-child(even)
+      width: 49%
+      float: right
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+        width: 100%
+  &__header
+    @extend %headerPFBSans_font
+    letter-spacing: 2px
+    margin-top: 60px
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 4em
+      margin-bottom: 30px
+  &__subheader
+    @extend %header_Helvetica_font
+    text-align: center
+    font-size: 14px
+    margin-bottom: 30px
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 2em
+      margin-bottom: 30px
+
+.accordion
+  &__wrp
+    margin: 50px 0
+    z-index: 80
+  &__name
+    @extend %common_header2
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 3em
+  dt
+    @extend %common_header
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 3em
+
+  dd
+    @extend %common_text
+    background-color: $lightColor
+    p
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+        margin: 40px 0
+        font-size: 3.3em
+        line-height: 60px
+
+  dt, dd
+    padding: 10px
+    border: 1px solid black
+    border-bottom: 0
+  &:last-of-type
+    border-bottom: 1px solid black
+  a
+    display: block
+    color: #633a00
+    text-decoration: none
+  dt
+    background-color: $darkColor
+  dd
+    border-top: 0
+  &:last-of-type
+    border-top: 1px solid black
+    position: relative
+    top: -1px

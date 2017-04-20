@@ -1,0 +1,74 @@
+@import '../../styles/common'
+@import '../../styles/variables'
+@import '../../components/Common/ButtonWithTextStyles'
+
+// remove default
+#services
+  #block1
+    height: 100% !important
+
+.calculator-form
+  +textButton($right: 5px, $bottom: 5px, $position: absolute)
+  @extend %clearfix
+  &__block
+    margin: 20px 0
+    display: inline-block
+    width: 50%
+    float: left
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      width: 100%
+      text-align: inherit
+    &:nth-child(5)
+      display: block
+      width: 100%
+      text-align: center
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+        width: 100%
+        text-align: inherit
+  &__item
+    display: inline-block
+    width: 50%
+    margin: 7px 0
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      width: 100%
+      margin: 20px 0
+    &--full-width
+      width: 100%
+      text-align: center
+      & .calculator-form__input
+        width: 30%
+    &--error
+      .calculator-form__label
+        color: #f00
+      .calculator-form__input, .calculator-form__input:focus
+        border: 1px solid #f00
+  &__head
+    @extend %commonHeader
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 3em
+  &__label
+    @extend %commonText
+    transition: color .4s ease-in-out
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      font-size: 3em
+      line-height: 20px
+  &__text
+    margin-left: 20px
+  &__input
+    border: 1px solid #000000
+    transition: border-color .4s ease-in-out
+    padding: 8px
+    width: 40px
+    @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+      width: 80px
+      height: 40px
+    &[type="checkbox"], &[type="radio"]
+      width: 20px
+      & + span
+        margin-left: 10px
+      @media screen and (min-device-width: 320px) and (max-device-width: 768px)
+        width: 80px
+        height: 40px
+
+    &:focus
+      border: 1px solid #000000

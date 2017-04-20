@@ -1,0 +1,3 @@
+export const CHANGE_SHOW = 'CHANGE_SHOW';
+export const CALCULATE_PRICE = 'CALCULATE_PRICE';
+export const TOGGLE_LOADER = 'TOGGLE_LOADER';

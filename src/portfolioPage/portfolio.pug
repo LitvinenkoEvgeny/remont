@@ -1,0 +1,96 @@
+.filter
+  .deco
+    .deco__inner
+      svg.icon.icon-figure
+        use(xlink:href='#icon-figure')
+  //label.filter__item
+    input(type='radio', name='rent', value='works', checked='checked')
+    .btn.btn_transparent
+      .btn__front Всё
+      .btn__hover
+        .btn__hover-in Всё
+  label.filter__item
+    input(type='radio', name='rent', value='commercial')
+    .btn.btn_transparent
+      .btn__front Комерческая
+      .btn__hover
+        .btn__hover-in Комерческая
+  label.filter__item
+    input(type='radio', name='rent', value='residential')
+    .btn.btn_transparent
+      .btn__front Жилая
+      .btn__hover
+        .btn__hover-in Жилая
+ul.filter-container
+  each type in portfolioItems
+    each item in type.items
+      li.object-wrapper(data-filter=type.type)
+        .object.js-box
+          .object__inner
+            .object__gallery
+              .object__buttons
+                button.object__slider-prev(type='button')
+                  span
+                    svg.icon.icon-arrow
+                      use(xlink:href='#icon-arrow')
+                    |  предыдущее фото
+                button.object__slider-next(type='button')
+                  span
+                    | следующее фото
+                    svg.icon.icon-arrow
+                      use(xlink:href='#icon-arrow')
+                button.object__close(type='button')
+                  span
+                    | свернуть объект
+                    svg.icon.icon-arrow-sm
+                      use(xlink:href='#icon-arrow-sm')
+              .object__slider
+                each image in item.images
+                  .object__slide(style=`background-image:url('dist/${require('./images/'+image)}')`)
+              .info.table
+                .table__border
+                  svg(width='650', height='180', viewbox='0 0 650 180', xmlns='http://www.w3.org/2000/svg')
+                    title
+                      | info-table
+                    g(stroke-linecap='square', stroke='#333', fill='none', fill-rule='evenodd')
+                      g(stroke-width='2')
+                        path.inner-border(d='M1 1h399v176')
+                        path.inner-border(d='M1 90h399v87')
+                        path.inner-border(d='M1 90h199v87')
+                      g(stroke-width='3')
+                        path.outer-border(d='M1.5 1.5h647v177')
+                        path.outer-border(d='M1.5 1.5v177h647')
+                .info__inner
+                  .info__cell.info__cell1
+                    a.btn.btn_object(href='rent.html#')
+                      .btn__hover
+                        .btn__hover-in !{item.headerBig}
+                          br
+                          small #{item.headerLittle}
+                      .btn__front #{item.headerBig}
+                        br
+                        small #{item.headerLittle}
+                  .info__cell.info__cell3
+                    .info-item
+                      small.info-item__label Площадь
+                      |                   #{item.area}
+                      sup 2
+                  .info__cell.info__cell2
+                    .info-item
+                      small.info-item__label Год сдачи
+                      |                   #{item.year}
+                  .info__cell.info__cell2
+                    .info-item
+                      small.info-item__label Цена
+                      |                   #{item.price}
+                  //.info__cell.info__cell3
+                    .info-item
+                      small.info-item__label Свободная Площадь
+                      |                   7 800 М
+                      sup 2
+            .object__detail
+              h4.heading.heading_red #{item.detailHeading}
+              p !{item.detail}
+              //a.btn.btn_link(href='rent.html#')
+                span.btn__hover(data-hover='Скачать презентацию')
+                span Скачать презентацию

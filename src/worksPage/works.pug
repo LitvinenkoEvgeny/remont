@@ -1,0 +1,160 @@
+.filter.filter--items-column
+  .deco
+    .deco__inner
+      svg.icon.icon-figure
+        use(xlink:href='#icon-figure')
+
+  each item in menuItems
+    label.filter__item(data-href=item.href)
+      input(type='radio', name=item.filterName, value=item.filterValue, checked=item.checked)
+      .btn.btn_transparent
+        .btn__front= item.filterText
+        .btn__hover
+          .btn__hover-in= item.filterText
+      div.filter__img(style=`background-image:url('dist/${require('./menu-images/'+item.img)}')`)
+
+  //- label.filter__item
+    input(type='radio', name='rent', value='cosmetic')
+    .btn.btn_transparent
+      .btn__front Косметический
+      .btn__hover
+        .btn__hover-in Косметический
+ul.filter-container
+  each type in portfolioItems
+    each item in type.items
+      li.object-wrapper(data-filter=type.type)
+        .object.js-box.object--works
+          .object__inner
+            .object__gallery
+              .object__buttons
+                button.object__slider-prev(type='button')
+                  span
+                    svg.icon.icon-arrow
+                      use(xlink:href='#icon-arrow')
+                    |  предыдущее фото
+                button.object__slider-next(type='button')
+                  span
+                    | следующее фото
+                    svg.icon.icon-arrow
+                      use(xlink:href='#icon-arrow')
+                button.object__close(type='button')
+                  span
+                    | свернуть объект
+                    svg.icon.icon-arrow-sm
+                      use(xlink:href='#icon-arrow-sm')
+              .object__slider
+                each image in item.images
+                  .object__slide(style=`background-image:url('dist/${require('./images/'+image)}')`)
+              .info.table
+                .table__border
+                  svg(width='650', height='180', viewbox='0 0 650 180', xmlns='http://www.w3.org/2000/svg')
+                    title
+                      | info-table
+                    g(stroke-linecap='square', stroke='#333', fill='none', fill-rule='evenodd')
+                      g(stroke-width='2')
+                        path.inner-border(d='M1 1h399v176')
+                        path.inner-border(d='M1 90h399v87')
+                        path.inner-border(d='M1 90h199v87')
+                      g(stroke-width='3')
+                        path.outer-border(d='M1.5 1.5h647v177')
+                        path.outer-border(d='M1.5 1.5v177h647')
+                .info__inner
+                  .info__cell.info__cell1
+                    a(href='rent.html#', class=createHeadingClassName(item))
+                      .btn__hover
+                        .btn__hover-in !{item.headerBig}
+                          br
+                          small #{item.headerTitle.toLowerCase()}
+                      .btn__front !{item.headerBig}
+                        br
+                        small #{item.headerTitle.toLowerCase()}
+                  .info__cell.info__cell3
+                    .info-item
+                      small.info-item__label !{item.areaTitle}
+                      |                   !{item.area}
+                  .info__cell.info__cell2
+                    .info-item
+                      small.info-item__label !{item.yearTitle}
+                      |                   !{item.year}
+                  .info__cell.info__cell2
+                    .info-item
+                      small.info-item__label !{item.priceTitle}
+                      |                   !{item.price}
+                  //.info__cell.info__cell3
+                    .info-item
+                      small.info-item__label Свободная Площадь
+                      |                   7 800 М
+                      sup 2
+            .object__detail
+              h4.heading.heading_red #{item.detailHeading}
+              p !{item.detail}
+              //a.btn.btn_link(href='rent.html#')
+                span.btn__hover(data-hover='Скачать презентацию')
+                span Скачать презентацию
+            if isSinglePage
+              .object__form
+                section.js-section.contacts
+                  .contacts__inner
+                    .contacts-table.table.js-table
+                      .table__border.js-border
+                        svg(width='1080', height='494', viewbox='0 0 1080 494', xmlns='http://www.w3.org/2000/svg')
+                          title
+                            | contacts-table
+                          g(stroke-linecap='square', stroke='#333', fill='none', fill-rule='evenodd')
+                            path.inner-border(d='M452.5 1.5v421h626')
+                            path.inner-border(d='M452.5 1.5v207h626')
+                            path.inner-border(d='M452.5 1.5v155h626')
+                            path.inner-border(d='M452.5 1.5v103h626')
+                            g(stroke-width='3')
+                              path.outer-border(d='M1.5 1.5v207h451')
+                              path.outer-border(d='M1.5 1.5v103h451')
+                              path.outer-border(d='M1.5 1.5h451v491')
+                              path.outer-border(d='M1.5 1.5v491h1077')
+                              path.outer-border(d='M1.5 1.5h1077v491')
+                      table
+                        tr.contacts-table__row1
+                          td.contacts-table__cell
+                            .contact-item
+                              small.contact-item__label Телефон
+                              a.contact-item__phone(href='tel:8(495)642-43-19') 8(495)642-43-19
+                          td.contacts-table__cell
+                            strong.heading
+                              | Остались
+                              br
+                              |  вопросы?
+                        tr.contacts-table__row1
+                          td.contacts-table__cell
+                            .contact-item
+                              small.contact-item__label e-mail
+                              a(href='mailto:mosstroiyut@mail.ru') mosstroiyut@mail.ru
+                          td.contacts-table__cell(rowspan='2')
+                            form.form.form--single-page(name='question', data-subject='Вопрос')
+                              .form__message
+                                .form__message-inner
+                                  strong Спасибо
+                                  span Мы Вам скоро перезвоним
+                              input.input(type='text', name='name', placeholder='Ваше имя')
+                              input.input(type='tel', name='phone', placeholder='Ваш телефон')
+                              textarea.input(name='message', placeholder='Сообщение')
+                              button.btn.btn_submit.btn--no-padding(type='submit')
+                                .btn__hover
+                                  .btn__hover-in
+                                    | Отправить
+                                    svg.icon.icon-arrow
+                                      use(xlink:href='#icon-arrow')
+                                .btn__front
+                                  | Отправить
+                                  svg.icon.icon-arrow
+                                    use(xlink:href='#icon-arrow')
+                        tr.contacts-table__row2
+                          td.contacts-table__cell
+                            .contact-item
+                              small.contact-item__label адрес
+                              |                   Москва
+                              br
+                              | Красный Казанец
+                              br
+                              | дом 1
+                              br
+                              | офис 77
+                // END contacts
