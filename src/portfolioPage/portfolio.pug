@@ -10,17 +10,17 @@
       .btn__hover
         .btn__hover-in Всё
   label.filter__item
-    input(type='radio', name='rent', value='commercial')
-    .btn.btn_transparent
-      .btn__front Комерческая
-      .btn__hover
-        .btn__hover-in Комерческая
-  label.filter__item
     input(type='radio', name='rent', value='residential')
     .btn.btn_transparent
       .btn__front Жилая
       .btn__hover
         .btn__hover-in Жилая
+  label.filter__item
+    input(type='radio', name='rent', value='commercial')
+    .btn.btn_transparent
+      .btn__front Комерческая
+      .btn__hover
+        .btn__hover-in Комерческая
 ul.filter-container
   each type in portfolioItems
     each item in type.items

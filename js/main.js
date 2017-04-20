@@ -13500,12 +13500,13 @@
         }
 
         function r() {
+            // find me
             // oldMap 50.4189765, 30.473812
             var t = {
                 zoom: 17,
                 disableDefaultUI: !1,
                 scrollwheel: !1,
-                center: new google.maps.LatLng(55.720194, 37.808438),
+                center: new google.maps.LatLng(55.7968504, 37.6879735),
                 styles: l,
                 mapTypeControl: !0,
                 mapTypeControlOptions: {
@@ -13588,13 +13589,14 @@
             featureType: "water",
             elementType: "geometry.fill",
             stylers: [{color: "#d3d3d3"}]
-        }], a = [[55.720194, 37.808438, 1, {
+        }], a = [[55.7968504, 37.6879735, 1, {
             head: "mosstroy",
             address: "address 1",
             tel: "8(495) 642-43-19",
             open: "8:30AM - 5:00PM",
             common: "some text"
         }]], window.onload = s, e.exports = r
+      // find me
       // oldMap 50.4189765, 30.473812
     }, {}],
     19: [function (t, e, i) {
