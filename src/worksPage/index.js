@@ -3,6 +3,7 @@ import menuItems from './works-nav.json';
 import template from 'pug-loader!./works.pug';
 import $ from 'jquery';
 import './works.sass';
+import scrollHelper from '../utils/scrollHelper';
 const app = window.app;
 
 // import { priceData } from '../price/priceData.js';
@@ -31,6 +32,10 @@ class WorksPage {
     this.filterItems = null;
     this.filter = null;
     this.placeholder = document.body.querySelector('#worksPlaceholder');
+    this.scrollHelper = new scrollHelper({
+      offset: {right: 20, top: 90},
+      target: '#catalog'
+    });
     this.app = window.app;
 
     this.removeOpened = this.removeOpened.bind(this);
@@ -42,6 +47,7 @@ class WorksPage {
     this.selectItems();
     this.addEvents();
     this.initAppEvents();
+    this.scrollHelper.init();
   }
 
   nowAt() {

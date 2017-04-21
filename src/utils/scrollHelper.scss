@@ -1,0 +1,55 @@
+
+@keyframes scroll-inner {
+  from {
+    margin-top: 15%;
+  }
+  to {
+    margin-top: 50%;
+  }
+}
+
+
+@keyframes scroll-mouse {
+  from {
+    margin-top: 0;
+  }
+  to {
+    margin-top: 15px;
+  }
+}
+
+div.mouse-container {
+  position: relative;
+  display: block;
+  //border:solid 1px red;
+  height: 100px;
+}
+
+div.mouse {
+  z-index: 200;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 30px;
+  height: 50px;
+  border: solid 2px #000;
+  border-radius: 25px;
+  animation: scroll-mouse 1.5s;
+  animation-iteration-count: infinite;
+  //-webkit-animation-timing-function:ease;
+  //animation-timing-function:ease;
+
+  span.scroll-down {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    margin: 15% auto auto auto;
+
+    animation: scroll-inner 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease
+
+  }
+}

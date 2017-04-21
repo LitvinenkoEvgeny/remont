@@ -1,13 +1,20 @@
 import portfolioJSON from './portfolio.json';
 import template from 'pug-loader!./portfolio.pug';
 import './portfolio.sass';
+import scrollHelper from '../utils/scrollHelper';
 const app = window.app;
+
+const scrlHelper = new scrollHelper({
+  offset: {right: 20, top: 90},
+  target: '#catalog'
+});
 
 // console.log(portfolioJSON);
 // console.log(template({portfolioItems: portfolioJSON}));
 const placeholder = document.body.querySelector('#portfolioPlaceholder').insertAdjacentHTML('afterEnd',
   template({portfolioItems: portfolioJSON})
 );
+scrlHelper.init();
 
 function removeOpened () {
   app.openedObjects = [];
