@@ -7,17 +7,17 @@ export const priceData = {
       {
         repairType: 'Косметический ремонт',
         price: 'от 2720 руб.',
-        materialCost: 'от 3270 руб.',
+        materialCost: 'от 2000 руб.',
         totalPrice: 'от 5990 руб.'
       }, {
         repairType: 'Капитальный ремонт',
         price: 'от 3900 руб.',
-        materialCost: 'от 4850 руб.',
+        materialCost: 'от 2500 руб.',
         totalPrice: 'от 8750 руб.'
       }, {
         repairType: 'Индивидуальный ремонт',
         price: 'от 4240 руб.',
-        materialCost: 'от 7970 руб.',
+        materialCost: 'от 3800 руб.',
         totalPrice: 'от 12210 руб.'
       }
     ]
@@ -33,137 +33,137 @@ export const priceData = {
         rowspan: 3,
         repairType: 'Косметический',
         price: '920 руб.',
-        materialCost: '1250 руб.',
-        totalPrice: '2170 руб.'
+        materialCost: '750 руб.',
+        totalPrice: '1670 руб.'
       }, {
         repairType: 'Капитальный',
         price: '2450 руб.',
-        materialCost: '3100 руб.',
-        totalPrice: '5550 руб.'
+        materialCost: '1500 руб.',
+        totalPrice: '3950 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '4890 руб.',
-        materialCost: '6400 руб.',
-        totalPrice: '11290 руб.'
+        materialCost: '3500 руб.',
+        totalPrice: '8390 руб.'
       }, {
         realEstateType: 'Ремонт магазинов',
         rowspan: 3,
         repairType: 'Косметический',
         price: '750 руб.',
-        materialCost: '1200 руб.',
-        totalPrice: '1950 руб.'
+        materialCost: '600 руб.',
+        totalPrice: '1350 руб.'
       }, {
         repairType: 'Капитальный',
         price: '1900 руб.',
-        materialCost: '2800 руб.',
-        totalPrice: '4700 руб.'
+        materialCost: '700 руб.',
+        totalPrice: '2600 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '4500 руб.',
-        materialCost: '6400 руб.',
-        totalPrice: '10900 руб.'
+        materialCost: '3500 руб.',
+        totalPrice: '8000 руб.'
       }, {
         realEstateType: 'Ремонт ресторанов и кафе',
         rowspan: 3,
         repairType: 'Косметический',
         price: '1300 руб.',
-        materialCost: '2250 руб.',
-        totalPrice: '3550 руб.'
+        materialCost: '1100 руб.',
+        totalPrice: '2400 руб.'
       }, {
         repairType: 'Капитальный',
         price: '3150 руб.',
-        materialCost: '3800 руб.',
-        totalPrice: '6950 руб.'
+        materialCost: '1700 руб.',
+        totalPrice: '4850 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '6900 руб.',
-        materialCost: '8300 руб.',
-        totalPrice: '15200 руб.'
+        materialCost: '4200 руб.',
+        totalPrice: '11100 руб.'
       }, {
         realEstateType: 'Ремонт салонов красоты',
         rowspan: 3,
         repairType: 'Косметический',
         price: '1150 руб.',
-        materialCost: '1500 руб.',
-        totalPrice: '2650 руб.'
+        materialCost: '750 руб.',
+        totalPrice: '1900 руб.'
       }, {
         repairType: 'Капитальный',
         price: '2200 руб.',
-        materialCost: '3200 руб.',
-        totalPrice: '5400 руб.'
+        materialCost: '1500 руб.',
+        totalPrice: '3700 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '5500 руб.',
-        materialCost: '6900 руб.',
-        totalPrice: '12400 руб.'
+        materialCost: '3500 руб.',
+        totalPrice: '9000 руб.'
       }, {
         realEstateType: 'Ремонт автосалонов',
         rowspan: 3,
         repairType: 'Косметический',
         price: '700 руб.',
-        materialCost: '1150 руб.',
-        totalPrice: '1850 руб.'
+        materialCost: '500 руб.',
+        totalPrice: '1200 руб.'
       }, {
         repairType: 'Капитальный',
         price: '1900 руб.',
-        materialCost: '2800 руб.',
-        totalPrice: '4700 руб.'
+        materialCost: '1500 руб.',
+        totalPrice: '3400 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '3500 руб.',
-        materialCost: '5300 руб.',
-        totalPrice: '8800 руб.'
+        materialCost: '2800 руб.',
+        totalPrice: '6300 руб.'
       }, {
         realEstateType: 'Ремонт отелей и хостелов',
         rowspan: 3,
         repairType: 'Косметический',
         price: '1300 руб.',
-        materialCost: '2150 руб.',
-        totalPrice: '3250 руб.'
+        materialCost: '1000 руб.',
+        totalPrice: '2300 руб.'
       }, {
         repairType: 'Капитальный',
         price: '3150 руб.',
-        materialCost: '3700 руб.',
-        totalPrice: '6850 руб.'
+        materialCost: '1800 руб.',
+        totalPrice: '4950 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '6800 руб.',
-        materialCost: '8300 руб.',
-        totalPrice: '15100 руб.'
+        materialCost: '4100 руб.',
+        totalPrice: '10900 руб.'
       }, {
         realEstateType: 'Ремонт медицинских кабинетов',
         rowspan: 3,
         repairType: 'Косметический',
         price: '900 руб.',
-        materialCost: '2250 руб.',
-        totalPrice: '3150 руб.'
+        materialCost: '1000 руб.',
+        totalPrice: '1900 руб.'
       }, {
         repairType: 'Капитальный',
         price: '2950 руб.',
-        materialCost: '3800 руб.',
-        totalPrice: '6750 руб.'
+        materialCost: '1650 руб.',
+        totalPrice: '3600 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '5900 руб.',
-        materialCost: '8300 руб.',
-        totalPrice: '14200 руб.'
+        materialCost: '4150 руб.',
+        totalPrice: '10050 руб.'
       }, {
         realEstateType: 'Ремонт учебных аудитоий',
         rowspan: 3,
         repairType: 'Косметический',
         price: '750 руб.',
-        materialCost: '1300 руб.',
-        totalPrice: '2150 руб.'
+        materialCost: '650 руб.',
+        totalPrice: '1400 руб.'
       }, {
         repairType: 'Капитальный',
         price: '2000 руб.',
-        materialCost: '2800 руб.',
-        totalPrice: '4500 руб.'
+        materialCost: '1400 руб.',
+        totalPrice: '3400 руб.'
       }, {
         repairType: 'Индивидуальный',
         price: '4500 руб.',
-        materialCost: '6700 руб.',
-        totalPrice: '11200 руб.'
+        materialCost: '3350 руб.',
+        totalPrice: '7860 руб.'
       }
     ]
   },

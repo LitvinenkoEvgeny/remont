@@ -26,7 +26,7 @@
     "style-loader": "^0.13.2",
     "susy": "^2.2.12",
     "url-loader": "^0.5.8",
-    "webpack": "^2.2.1",
+    "webpack": "^2.4.1",
     "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {

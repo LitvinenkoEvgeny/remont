@@ -36,7 +36,7 @@ const dropDownField = (field) => {
 const renderField = (field) => {
   const className = cx({
     'calculator-form__item': true,
-    'calculator-form__item--error': field.meta.touched && field.meta.error,
+    'calculator-form__item--error': field.meta.error,
     'calculator-form__item--full-width': field.fullWidth,
   });
 
