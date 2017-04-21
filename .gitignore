@@ -6,4 +6,5 @@ node_modules/
 .idea
 .tern-project
 *.zip
+*.tar.gz
 *.log
