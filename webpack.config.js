@@ -4,15 +4,20 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpackUglifyJsPlugin = require('webpack-uglify-js-plugin');
 
 
+// app: './src/index.js',
+//   pricePage: './src/price/index.js',
+//   modal: './src/modal/index.js',
+//   portfolio: './src/portfolioPage/index.js',
+//   mobile: './src/mobile/index.js',
+//   works: './src/worksPage/index.js',
+//   metrika: './src/metrika/index.js'
+
 module.exports = {
   entry: {
-    app: './src/index.js',
-    pricePage: './src/price/index.js',
-    modal: './src/modal/index.js',
-    portfolio: './src/portfolioPage/index.js',
-    mobile: './src/mobile/index.js',
-    works: './src/worksPage/index.js',
-    metrika: './src/metrika/index.js'
+    bundle: ['./src/index.js', './src/price/index.js',
+      './src/portfolioPage/index.js', './src/mobile/index.js',
+      './src/worksPage/index.js', './src/metrika/index.js'
+    ]
   },
   devServer: {
     contentBase: __dirname,

@@ -1,3 +1,13 @@
+#catalog {
+  div.mouse-container {
+    display: none;
+  }
+  &.is-opened {
+    div.mouse-container {
+      display: block;
+    }
+  }
+}
 
 @keyframes scroll-inner {
   from {
@@ -7,7 +17,6 @@
     margin-top: 50%;
   }
 }
-
 
 @keyframes scroll-mouse {
   from {
@@ -20,7 +29,7 @@
 
 div.mouse-container {
   position: relative;
-  display: block;
+  //display: block;
   //border:solid 1px red;
   height: 100px;
 }

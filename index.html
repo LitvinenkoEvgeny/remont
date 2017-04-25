@@ -8,13 +8,28 @@
   <meta name="viewport" content="width=1368">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" media="all" href="css/screen.css">
+  <link rel="stylesheet" href="dist/bundle.css">
+  <!--<script>-->
+    <!--console.time("dom load");-->
+    <!--document.addEventListener("DOMContentLoaded", function(event) {-->
+      <!--console.log(console.timeEnd("dom load"));-->
+      <!--var bundleScript = document.createElement("script");-->
+      <!--bundleScript.async = true;-->
+      <!--bundleScript.type = "text/javascript";-->
+      <!--bundleScript.defer = true;-->
+      <!--bundleScript.src = "dist/bundle.js";-->
+      <!--console.log(bundleScript);-->
+      <!--document.body.appendChild(bundleScript);-->
+      <!--document.body.insertAdjacentHTML("beforeEnd", bundleScript);-->
+    <!--});-->
+  <!--</script>-->
   <script type="text/javascript"
           data-pace-options="{ &quot;restartOnPushState&quot;: false, &quot;restartOnRequestAfter&quot;: false }"
           src="js/pace.min.js"></script>
   <!--[if IE]>
   <script src="js/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="dist/app.css">
-  <link rel="stylesheet" href="dist/mobile.css">
+  <!--<link rel="stylesheet" href="dist/app.css">-->
+  <!--<link rel="stylesheet" href="dist/mobile.css">-->
 </head>
 <body class="preload">
 
@@ -212,12 +227,24 @@
               </ul>
             </div>
             <div id="objects-rent" class="catalog__content">
+              <!--<link rel="stylesheet" href="dist/portfolio.css">-->
+              <div id="portfolioPlaceholder"></div>
+              <!--<script src="dist/portfolio.js"></script>-->
             </div>
             <div id="objects-buy" class="catalog__content">
+              <!--<link rel="stylesheet" href="dist/pricePage.css">-->
+              <div id="price-content"></div>
+              <!--<script src="dist/pricePage.js"></script>-->
             </div>
             <div id="objects-invest" class="catalog__content">
+              <!--<link rel="stylesheet" href="dist/app.css">-->
+              <div id="react-calculator"></div>
+              <!--<script src="dist/app.js"></script>-->
             </div>
             <div id="objects-works" class="catalog__content">
+              <!--<link rel="stylesheet" href="dist/works.css">-->
+              <div id="worksPlaceholder"></div>
+              <!--<script src="dist/works.js"></script>-->
             </div>
           </div>
         </div>
@@ -1162,6 +1189,7 @@
 <!--END popups-->
 <!--LOAD SCRIPTS-->
 <script src="js/main.js"></script>
+<script src="dist/bundle.js" async></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function (d, w, c) {
   (w[c] = w[c] || []).push(function () {
@@ -1189,13 +1217,13 @@
     f();
   }
 })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
-<script src="dist/metrika.js"></script>
+<!--<script src="dist/metrika.js"></script>-->
 <!-- <script>
   var counterInterval = setInterval(function(){
     app.counter = window.yaCounter41576979
     if(app.counter) clearInterval(counterInterval);
   }, 1000);
 </script> -->
-<script src="dist/mobile.js"></script>
+<!--<script src="dist/mobile.js"></script>-->
 </body>
 </html>
