@@ -11,10 +11,15 @@ const scrlHelper = new scrollHelper({
 
 // console.log(portfolioJSON);
 // console.log(template({portfolioItems: portfolioJSON}));
-const placeholder = document.body.querySelector('#portfolioPlaceholder').insertAdjacentHTML('afterEnd',
-  template({portfolioItems: portfolioJSON})
-);
-scrlHelper.init();
+try{
+  const placeholder = document.body.querySelector('#portfolioPlaceholder').insertAdjacentHTML('afterEnd',
+    template({portfolioItems: portfolioJSON})
+  );
+  scrlHelper.init();
+} catch(e){
+  console.log(e);
+  console.info(`пытается отрендерить прайс не на главной странице ( пропустить ошибку )`);
+}
 
 function removeOpened () {
   app.openedObjects = [];

@@ -13,8 +13,7 @@
           src="../js/pace.min.js"></script>
   <!--[if IE]>
   <script src="js/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="dist/app.css">
-  <link rel="stylesheet" href="dist/mobile.css">
+  <link rel="stylesheet" href="dist/bundle.css">
 </head>
 <body class="preload">
 
@@ -96,7 +95,6 @@
         <div class="catalog__modal-container">
           <div class="catalog__inner">
             <div id="objects-works" class="catalog__content">
-              <link rel="stylesheet" href="dist/works.css">
               <div id="worksPlaceholder"></div>
             </div>
           </div>
@@ -131,9 +129,14 @@
     f();
   }
 })(document, window, "yandex_metrika_callbacks"); </script> <!-- /Yandex.Metrika counter -->
-<script src="../dist/mobile.js"></script>
-<script src="../js/main.js"></script>
-<script src="../dist/works.js" async defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.4/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.4/react-redux.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux-form/6.6.3/redux-form.min.js"></script>
+<script src="js/main.js"></script>
+<script src="dist/bundle.js" async></script>
 <script>
   $('#objects-works').css({display: 'block', paddingTop: '210px'});
   function backToSite(){

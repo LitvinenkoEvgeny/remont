@@ -201,7 +201,12 @@ class WorksPage {
   }
 
   renderTemplate() {
-    this.placeholder.insertAdjacentHTML('afterEnd', this.template);
+    try{
+      this.placeholder.insertAdjacentHTML('afterEnd', this.template);
+    } catch(e){
+      console.log(e);
+      console.info(`пытается отрендерить услуги не на главной странице ( пропустить ошибку )`);
+    }
   }
 
   addEvents() {

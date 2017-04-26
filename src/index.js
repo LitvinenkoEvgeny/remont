@@ -8,9 +8,14 @@ import store from './store';
 
 const htmlContainerElement = document.querySelector('#react-calculator');
 
-ReactDOM.render(
-  <Provider store={store}>
-    <Calculator/>
-  </Provider>
-  ,
-  htmlContainerElement);
+try {
+  ReactDOM.render(
+    <Provider store={store}>
+      <Calculator/>
+    </Provider>
+    ,
+    htmlContainerElement);
+} catch(e){
+  console.log(e);
+  console.info(`пытается отрендерить калькулятор не на главной странице ( пропустить ошибку )`);
+}

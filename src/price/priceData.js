@@ -6,19 +6,19 @@ export const priceData = {
     tableRows: [
       {
         repairType: 'Косметический ремонт',
-        price: 'от 2720 руб.',
-        materialCost: 'от 2000 руб.',
-        totalPrice: 'от 5990 руб.'
+        price: '2720 руб.',
+        materialCost: '2000 руб.',
+        totalPrice: '4720 руб.'
       }, {
         repairType: 'Капитальный ремонт',
-        price: 'от 3900 руб.',
-        materialCost: 'от 2500 руб.',
-        totalPrice: 'от 8750 руб.'
+        price: '3900 руб.',
+        materialCost: '2500 руб.',
+        totalPrice: '6400 руб.'
       }, {
         repairType: 'Индивидуальный ремонт',
-        price: 'от 4240 руб.',
-        materialCost: 'от 3800 руб.',
-        totalPrice: 'от 12210 руб.'
+        price: '4240 руб.',
+        materialCost: '3800 руб.',
+        totalPrice: '8240 руб.'
       }
     ]
   },

@@ -14,9 +14,14 @@ const $window = $('window');
 const $document = $('document');
 const $htmlBody = $('html, body');
 
-$priceContent.html(compileTable({table: data.firstTable, decreaseAndWrapWithBold}));
-$priceContent.append(renderAccordion({accordions: data.firstAccordion, decreaseAndWrapWithBold}));
-$priceContent.append(compileTable({table: data.secondTable, decreaseAndWrapWithBold}));
+try{
+    $priceContent.html(compileTable({table: data.firstTable, decreaseAndWrapWithBold}));
+    $priceContent.append(renderAccordion({accordions: data.firstAccordion, decreaseAndWrapWithBold}));
+    $priceContent.append(compileTable({table: data.secondTable, decreaseAndWrapWithBold}));
+} catch(e){
+  console.log(e);
+  console.info(`пытается отрендерить прайс не на главной странице ( пропустить ошибку )`);
+}
 
 accordionInit($window, $document, $htmlBody);
 

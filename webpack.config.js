@@ -19,6 +19,13 @@ module.exports = {
       './src/worksPage/index.js', './src/metrika/index.js'
     ]
   },
+  externals: {
+    lodash: "_",
+    jquery: "jQuery",
+    react: "React",
+    "react-dom": "ReactDOM",
+    "react-redux": "ReactRedux"
+  },
   devServer: {
     contentBase: __dirname,
     hot: true,
@@ -30,7 +37,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: './'
   },
-  devtool: "eval",
   watch: true,
   plugins: [
     new ExtractTextPlugin("[name].css"),
