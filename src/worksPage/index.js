@@ -169,6 +169,7 @@ class WorksPage {
   selectCheckedFilter(e) {
     if (e.target.nodeName === 'INPUT') {
       $(e.target).attr('checked', '');
+      $(e.target).trigger('change');
     }
   }
 
