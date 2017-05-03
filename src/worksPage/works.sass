@@ -36,12 +36,17 @@
       filter: blur(0px) grayscale(0)
 
 
+
   .filter
     width: 100%
 
     .filter__item
-      input[checked="checked"] ~ .filter__img
-        filter: blur(0px) grayscale(0)
+      input[checked="checked"]
+        ~ .btn
+            .btn__hover
+              width: 100%
+        ~ .filter__img
+          filter: blur(0px) grayscale(0)
 
     .btn
       font-size: 1.7em
@@ -80,11 +85,11 @@
           padding-top: 40px
 
       &--2-rows
-        .btn__hover-in, .btn__front
+        .btn__hover-in
           padding-top: 31px
 
       &--3-rows
-        .btn__hover-in, .btn__front
+        .btn__hover-in
           padding-top: 23px
 
   .contacts-table
