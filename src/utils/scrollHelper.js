@@ -21,6 +21,7 @@ export default class ScrollHelper {
         <div class='mouse-container'>
           <div class='mouse'>
             <span class='scroll-down'></span>
+            <i class="mouse__chevron"></i>
           </div>
         </div> `;
 

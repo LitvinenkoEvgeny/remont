@@ -36,6 +36,7 @@ class WorksPage {
       offset: {right: 20, top: 90},
       target: '#catalog'
     });
+    console.log(this.scrollHelper);
     this.app = window.app;
 
     this.removeOpened = this.removeOpened.bind(this);
